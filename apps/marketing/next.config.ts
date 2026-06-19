@@ -4,6 +4,20 @@ import createNextIntlPlugin from "next-intl/plugin";
 const nextConfig: NextConfig = {
   transpilePackages: ["@alsos/ui"],
   allowedDevOrigins: ["alsos.localhost", "*.alsos.localhost"],
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "media.alsos.localhost",
+        pathname: "/image/**",
+      },
+      {
+        protocol: "https",
+        hostname: "media.alsos.dev",
+        pathname: "/image/**",
+      },
+    ],
+  },
   reactCompiler: true,
   logging: {
     // browserToTerminal: true,
