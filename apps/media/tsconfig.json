@@ -1,0 +1,5 @@
+{
+  "extends": "@alsos/typescript-config/base.json",
+  "exclude": ["test"],
+  "include": ["worker-configuration.d.ts", "src/**/*.ts"],
+}

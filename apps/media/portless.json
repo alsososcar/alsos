@@ -1,0 +1,5 @@
+{
+  "name": "media.alsos",
+  "script": "dev:app",
+  "proxy": true
+}
