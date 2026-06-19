@@ -16,11 +16,13 @@
     "@types/node": "25.9.3",
     "portless": "0.14.0",
     "typescript": "6.0.3",
-    "vitest": "3.2.6",
+    "vitest": "4.1.9",
     "wrangler": "4.102.0"
   },
   "dependencies": {
+    "@t3-oss/env-core": "0.13.11",
     "hono": "4.12.25",
-    "try": "1.0.3"
+    "try": "1.0.3",
+    "zod": "4.4.3"
   }
 }

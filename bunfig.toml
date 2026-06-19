@@ -1,4 +1,3 @@
 [install]
 exact = true # Exact dependency versions so new possibly harmful versions doesn't get installed
 minimumReleaseAge = 259200 # 3 days
-minimumReleaseAgeExcludes = ["lucide-react"]
