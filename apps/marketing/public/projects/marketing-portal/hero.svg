@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" fill="none">
+  <rect width="1200" height="675" fill="#1e3a5f"/>
+  <rect x="80" y="120" width="1040" height="80" fill="#3b82f6" opacity="0.8"/>
+  <rect x="80" y="240" width="480" height="24" fill="#94a3b8" opacity="0.6"/>
+  <rect x="80" y="280" width="360" height="16" fill="#64748b" opacity="0.4"/>
+  <rect x="80" y="340" width="200" height="48" fill="#60a5fa"/>
+  <text x="600" y="580" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="20">Marketing-portal  Hero</text>
+</svg>

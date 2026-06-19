@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" fill="none">
+  <rect width="1200" height="675" fill="#0d1117"/>
+  <rect x="200" y="120" width="180" height="80" rx="4" fill="#21262d" stroke="#e94560" stroke-width="2"/>
+  <text x="290" y="170" text-anchor="middle" fill="#e94560" font-family="system-ui,sans-serif" font-size="14">Start</text>
+  <line x1="380" y1="160" x2="480" y2="160" stroke="#30363d" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="480" y="120" width="180" height="80" rx="4" fill="#21262d" stroke="#f0a500" stroke-width="2"/>
+  <text x="570" y="170" text-anchor="middle" fill="#f0a500" font-family="system-ui,sans-serif" font-size="14">SEB</text>
+  <line x1="660" y1="160" x2="760" y2="160" stroke="#30363d" stroke-width="2"/>
+  <rect x="760" y="120" width="180" height="80" rx="4" fill="#21262d" stroke="#2ea043" stroke-width="2"/>
+  <text x="850" y="170" text-anchor="middle" fill="#2ea043" font-family="system-ui,sans-serif" font-size="14">Eksamen</text>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#30363d"/></marker></defs>
+  <text x="600" y="580" text-anchor="middle" fill="#8b949e" font-family="system-ui,sans-serif" font-size="20">SEB  Eksamensflyt</text>
+</svg>

@@ -1,0 +1,36 @@
+import type { Project } from "./types"
+
+export const skoleDatabase: Project = {
+  slug: "skole-database",
+  title: "Skole-database",
+  summary:
+    "Egen PostgreSQL-database med migrasjoner, API og datamodell for skoleadministrasjon.",
+  description:
+    "Design og implementering av en dedikert databaseskjema for skoledata — elever, klasser, fag og vurderinger. PostgreSQL brukes som primær datalagring med versjonerte migrasjoner, indekser for ytelse, og et REST-API for frontend-applikasjoner. Løsningen følger prinsipper for dataintegritet, backup og tilgangsstyring.",
+  category: "database",
+  tags: ["PostgreSQL", "Drizzle", "API", "Migrasjoner"],
+  year: "2024",
+  role: "Database- og backend-utvikler",
+  facts: [
+    { label: "Database", value: "PostgreSQL 16" },
+    { label: "ORM", value: "Drizzle ORM" },
+    { label: "Migrasjoner", value: "Versjonert schema" },
+    { label: "API", value: "REST med validering" },
+    { label: "Leveranse", value: "Komplett datalag" },
+  ],
+  images: [
+    {
+      src: "/projects/skole-database/schema.svg",
+      alt: "Databaseskjema med tabeller og relasjoner",
+    },
+    {
+      src: "/projects/skole-database/api.svg",
+      alt: "API-endepunkter for skoledata",
+    },
+    {
+      src: "/projects/skole-database/migration.svg",
+      alt: "Migrasjonsflyt for databaseskjema",
+    },
+  ],
+  featured: true,
+}

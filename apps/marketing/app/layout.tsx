@@ -1,24 +1,36 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import type { Metadata } from "next"
+import { Geist, Geist_Mono } from "next/font/google"
 
-import "@alsos/ui/globals.css";
-import { cn } from "@alsos/ui/lib/utils";
-import { ThemeProvider } from "../components/theme-provider";
+import { SiteFooter } from "@/components/marketing/site-footer"
+import { SiteHeader } from "@/components/marketing/site-header"
+import { ThemeProvider } from "@/components/theme-provider"
+import "@alsos/ui/globals.css"
+import { cn } from "@alsos/ui/lib/utils"
 
-const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" })
 
 const fontMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
-});
+})
+
+export const metadata: Metadata = {
+  title: {
+    default: "Oscar Krokeide Alsos — Portfolio",
+    template: "%s",
+  },
+  description:
+    "Portfolio for Oscar Krokeide Alsos — IT-lærling med bestått fagprøve. Prosjekter innen webutvikling, integrasjoner, API-er og databasesystemer.",
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html
-      lang="en"
+      lang="nb"
       suppressHydrationWarning
       className={cn(
         "antialiased",
@@ -27,9 +39,13 @@ export default function RootLayout({
         geist.variable
       )}
     >
-      <body>
-        <ThemeProvider>{children}</ThemeProvider>
+      <body className="flex min-h-svh flex-col">
+        <ThemeProvider>
+          <SiteHeader />
+          <main className="flex-1">{children}</main>
+          <SiteFooter />
+        </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }
