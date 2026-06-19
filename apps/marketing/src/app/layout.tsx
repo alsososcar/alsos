@@ -6,6 +6,8 @@ import { SiteHeader } from "@/components/marketing/site-header";
 import { ThemeProvider } from "@/components/theme-provider";
 import "@alsos/ui/globals.css";
 import { cn } from "@alsos/ui/lib/utils";
+import { NextIntlClientProvider } from "next-intl";
+import { getExtracted, getLocale } from "next-intl/server";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -14,23 +16,30 @@ const fontMono = Geist_Mono({
   variable: "--font-mono",
 });
 
-export const metadata: Metadata = {
-  title: {
-    default: "Oscar Krokeide Alsos — Portfolio",
-    template: "%s",
-  },
-  description:
-    "Portfolio for Oscar Krokeide Alsos — IT-lærling med bestått fagprøve. Prosjekter innen webutvikling, integrasjoner, API-er og databasesystemer.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getExtracted();
 
-export default function RootLayout({
+  return {
+    title: {
+      default: t("Oscar Krokeide Alsos - Portfolio"),
+      template: "%s",
+    },
+    description: t(
+      "Portfolio for Oscar Krokeide Alsos — Fagbrev i IT-Utvikling. Prosjekter innen webutvikling, integrasjoner, API-er og databasesystemer."
+    ),
+  };
+}
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+
   return (
     <html
-      lang="nb"
+      lang={locale}
       suppressHydrationWarning
       className={cn(
         "antialiased",
@@ -40,11 +49,13 @@ export default function RootLayout({
       )}
     >
       <body className="mx-auto flex min-h-svh w-250 flex-col">
-        <ThemeProvider>
-          <SiteHeader />
-          <main className="flex-1">{children}</main>
-          <SiteFooter />
-        </ThemeProvider>
+        <NextIntlClientProvider>
+          <ThemeProvider>
+            <SiteHeader />
+            <main className="flex-1">{children}</main>
+            <SiteFooter />
+          </ThemeProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

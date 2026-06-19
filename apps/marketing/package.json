@@ -15,10 +15,13 @@
   "dependencies": {
     "@alsos/env": "workspace:*",
     "@alsos/ui": "workspace:*",
+    "@alsos/utils": "workspace:*",
     "@t3-oss/env-nextjs": "0.13.11",
     "babel-plugin-react-compiler": "1.0.0",
+    "country-flag-icons": "1.6.17",
     "lucide-react": "1.20.0",
     "next": "16.2.9",
+    "next-intl": "4.13.0",
     "next-themes": "0.4.6",
     "react": "19.2.7",
     "react-dom": "19.2.7",

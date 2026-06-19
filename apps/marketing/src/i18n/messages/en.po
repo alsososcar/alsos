@@ -1,0 +1,23 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: next-intl\n"
+"X-Crowdin-SourceKey: msgstr\n"
+
+#: src/components/locale-toggle.tsx
+msgid "dISpGP"
+msgstr "Switch language"
+
+#: src/components/navigation.tsx
+msgid "BjbTc8"
+msgstr "Oscar Krokeide Alsos"
+
+#: src/components/navigation.tsx
+msgid "PQcvAs"
+msgstr "Projects"
+
+#: src/components/navigation.tsx
+msgid "Yct1sD"
+msgstr "Contact"
