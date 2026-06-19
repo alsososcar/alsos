@@ -6,6 +6,14 @@ msgstr ""
 "X-Generator: next-intl\n"
 "X-Crowdin-SourceKey: msgstr\n"
 
+#: src/app/layout.tsx
+msgid "IYAtui"
+msgstr "Oscar Krokeide Alsos - Portfolio"
+
+#: src/app/layout.tsx
+msgid "jEWL_A"
+msgstr "Portfolio for Oscar Krokeide Alsos — Fagbrev i IT-Utvikling. Prosjekter innen webutvikling, integrasjoner, API-er og databasesystemer."
+
 #: src/components/locale-toggle.tsx
 msgid "dISpGP"
 msgstr "Switch language"

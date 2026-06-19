@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
+import Navigation from "@/components/navigation";
 import { SiteFooter } from "@/components/marketing/site-footer";
-import { SiteHeader } from "@/components/marketing/site-header";
 import { ThemeProvider } from "@/components/theme-provider";
 import "@alsos/ui/globals.css";
 import { cn } from "@alsos/ui/lib/utils";
@@ -51,7 +51,7 @@ export default async function RootLayout({
       <body className="mx-auto flex min-h-svh w-250 flex-col">
         <NextIntlClientProvider>
           <ThemeProvider>
-            <SiteHeader />
+            <Navigation />
             <main className="flex-1">{children}</main>
             <SiteFooter />
           </ThemeProvider>
