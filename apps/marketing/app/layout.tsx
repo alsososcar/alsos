@@ -1,18 +1,16 @@
-import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { Geist, Geist_Mono } from "next/font/google";
 
-import { SiteFooter } from "@/components/marketing/site-footer"
-import { SiteHeader } from "@/components/marketing/site-header"
-import { ThemeProvider } from "@/components/theme-provider"
-import "@alsos/ui/globals.css"
-import { cn } from "@alsos/ui/lib/utils"
+import "@alsos/ui/globals.css";
+import { cn } from "@alsos/ui/lib/utils";
+import type { Metadata } from "next";
+import { ThemeProvider } from "../components/theme-provider";
 
-const geist = Geist({ subsets: ["latin"], variable: "--font-sans" })
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 const fontMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
-})
+});
 
 export const metadata: Metadata = {
   title: {
@@ -21,12 +19,12 @@ export const metadata: Metadata = {
   },
   description:
     "Portfolio for Oscar Krokeide Alsos — IT-lærling med bestått fagprøve. Prosjekter innen webutvikling, integrasjoner, API-er og databasesystemer.",
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html
@@ -47,5 +45,5 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
