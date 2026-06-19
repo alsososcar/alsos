@@ -1,19 +1,32 @@
-import { Button } from "@alsos/ui/components/button"
+import { CapabilitiesSection } from "@/components/marketing/capabilities-section"
+import { ContactCta } from "@/components/marketing/contact-cta"
+import { HeroSection } from "@/components/marketing/hero-section"
+import { ProjectGrid } from "@/components/marketing/project-grid"
+import { getFeaturedProjects } from "@/lib/projects"
 
 export default function Page() {
+  const projects = getFeaturedProjects()
+
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
+    <>
+      <HeroSection />
+      <CapabilitiesSection />
+      <section id="prosjekter" className="mx-auto max-w-6xl px-6 py-20">
+        <p className="font-mono text-xs tracking-widest text-muted-foreground uppercase">
+          Portefølje
+        </p>
+        <h2 className="mt-2 font-heading text-2xl font-semibold tracking-wider uppercase">
+          Utvalgte prosjekter
+        </h2>
+        <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+          Prosjekter fra læretiden og eget arbeid — klikk for bilder, tekniske
+          detaljer og mer informasjon.
+        </p>
+        <div className="mt-10">
+          <ProjectGrid projects={projects} />
         </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
-    </div>
+      </section>
+      <ContactCta />
+    </>
   )
 }

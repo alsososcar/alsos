@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" fill="none">
+  <rect width="1200" height="675" fill="#1a1f2e"/>
+  <rect x="80" y="80" width="1040" height="50" fill="#2d3748"/>
+  <text x="120" y="113" fill="#68d391" font-family="monospace" font-size="16">GET /api/elever</text>
+  <rect x="80" y="150" width="1040" height="50" fill="#2d3748"/>
+  <text x="120" y="183" fill="#68d391" font-family="monospace" font-size="16">GET /api/klasser</text>
+  <rect x="80" y="220" width="1040" height="50" fill="#2d3748"/>
+  <text x="120" y="253" fill="#68d391" font-family="monospace" font-size="16">POST /api/vurderinger</text>
+  <rect x="80" y="290" width="1040" height="50" fill="#2d3748"/>
+  <text x="120" y="323" fill="#68d391" font-family="monospace" font-size="16">GET /api/fag</text>
+  <text x="600" y="580" text-anchor="middle" fill="#a0aec0" font-family="system-ui,sans-serif" font-size="20">Database  API</text>
+</svg>
