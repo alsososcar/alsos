@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { ProjectFacts } from "@/components/marketing/project-facts";
 import { ProjectGallery } from "@/components/marketing/project-gallery";
 import { getAllProjectSlugs, getProjectBySlug } from "@/lib/projects";
+import { resolveProjectImages } from "@/lib/media";
 import { Badge } from "@alsos/ui/components/badge";
 import { Button } from "@alsos/ui/components/button";
 import { Separator } from "@alsos/ui/components/separator";
@@ -71,7 +72,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       </header>
 
       <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_320px]">
-        <ProjectGallery images={project.images} />
+        <ProjectGallery images={resolveProjectImages(project.images)} />
         <ProjectFacts
           facts={project.facts}
           year={project.year}

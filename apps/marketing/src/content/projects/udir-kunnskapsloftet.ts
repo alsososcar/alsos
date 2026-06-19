@@ -20,15 +20,15 @@ export const udirKunnskapsloftet: Project = {
   ],
   images: [
     {
-      src: "/projects/udir-kunnskapsloftet/api.svg",
+      id: 7,
       alt: "API-integrasjon mot UDIR",
     },
     {
-      src: "/projects/udir-kunnskapsloftet/data.svg",
+      id: 8,
       alt: "Normalisert datastruktur for læreplaner",
     },
     {
-      src: "/projects/udir-kunnskapsloftet/sync.svg",
+      id: 9,
       alt: "Synkroniseringsflyt med caching",
     },
   ],

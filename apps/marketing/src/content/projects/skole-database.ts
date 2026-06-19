@@ -20,15 +20,15 @@ export const skoleDatabase: Project = {
   ],
   images: [
     {
-      src: "/projects/skole-database/schema.svg",
+      id: 10,
       alt: "Databaseskjema med tabeller og relasjoner",
     },
     {
-      src: "/projects/skole-database/api.svg",
+      id: 11,
       alt: "API-endepunkter for skoledata",
     },
     {
-      src: "/projects/skole-database/migration.svg",
+      id: 12,
       alt: "Migrasjonsflyt for databaseskjema",
     },
   ],

@@ -20,15 +20,15 @@ export const sebIntegrasjon: Project = {
   ],
   images: [
     {
-      src: "/projects/seb-integrasjon/config.svg",
+      id: 4,
       alt: "SEB-konfigurasjonsoversikt",
     },
     {
-      src: "/projects/seb-integrasjon/exam.svg",
+      id: 5,
       alt: "Eksamensmiljø i Safe Exam Browser",
     },
     {
-      src: "/projects/seb-integrasjon/flow.svg",
+      id: 6,
       alt: "Flytdiagram for eksamensoppstart",
     },
   ],

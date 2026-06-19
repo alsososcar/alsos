@@ -20,15 +20,15 @@ export const marketingPortal: Project = {
   ],
   images: [
     {
-      src: "/projects/marketing-portal/hero.svg",
+      id: 1,
       alt: "Oversikt over marketing-portalen med hero-seksjon",
     },
     {
-      src: "/projects/marketing-portal/grid.svg",
+      id: 2,
       alt: "Prosjektgrid med kort og tags",
     },
     {
-      src: "/projects/marketing-portal/detail.svg",
+      id: 3,
       alt: "Prosjektdetaljside med bildegalleri",
     },
   ],

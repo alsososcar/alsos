@@ -6,7 +6,7 @@ export interface ProjectFact {
 }
 
 export interface ProjectImage {
-  src: string
+  id: number
   alt: string
 }
 

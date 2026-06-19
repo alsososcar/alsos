@@ -1,7 +1,7 @@
-import Link from "next/link"
-import { MailIcon } from "lucide-react"
+import { MailIcon } from "lucide-react";
+import Link from "next/link";
 
-import { Button } from "@alsos/ui/components/button"
+import { Button } from "@alsos/ui/components/button";
 
 function ContactCta() {
   return (
@@ -18,14 +18,14 @@ function ContactCta() {
           meg en e-post.
         </p>
         <div className="mt-8">
-          <Button render={<Link href="mailto:hei@alsos.no" />}>
+          <Button render={<Link href="mailto:oscar@alsos.no" />}>
             <MailIcon data-icon="inline-start" />
-            hei@alsos.no
+            oscar@alsos.no
           </Button>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export { ContactCta }
+export { ContactCta };

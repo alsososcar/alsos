@@ -1,24 +1,22 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-
+import type { ResolvedProjectImage } from "@/lib/media";
+import { AspectRatio } from "@alsos/ui/components/aspect-ratio";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@alsos/ui/components/carousel"
-import { AspectRatio } from "@alsos/ui/components/aspect-ratio"
-import type { ProjectImage } from "@/content/projects/types"
+} from "@alsos/ui/components/carousel";
 
 interface ProjectGalleryProps {
-  images: ProjectImage[]
+  images: ResolvedProjectImage[];
 }
 
 function ProjectGallery({ images }: ProjectGalleryProps) {
   if (images.length === 0) {
-    return null
+    return null;
   }
 
   return (
@@ -26,14 +24,15 @@ function ProjectGallery({ images }: ProjectGalleryProps) {
       <CarouselContent>
         {images.map((image, index) => (
           <CarouselItem key={image.src}>
-            <AspectRatio ratio={16 / 9} className="overflow-hidden border border-border">
-              <Image
+            <AspectRatio
+              ratio={16 / 9}
+              className="overflow-hidden border border-border"
+            >
+              <img
                 src={image.src}
                 alt={image.alt}
-                fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 60vw"
-                priority={index === 0}
               />
             </AspectRatio>
             <p className="mt-2 font-mono text-xs text-muted-foreground">
@@ -49,7 +48,7 @@ function ProjectGallery({ images }: ProjectGalleryProps) {
         </>
       ) : null}
     </Carousel>
-  )
+  );
 }
 
-export { ProjectGallery }
+export { ProjectGallery };

@@ -1,5 +1,6 @@
 {
   "name": "media.alsos",
+  "appPort": 8787,
   "script": "dev:app",
   "proxy": true
 }

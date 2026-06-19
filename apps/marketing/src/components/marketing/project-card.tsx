@@ -1,33 +1,32 @@
-import Image from "next/image"
-import Link from "next/link"
+import Link from "next/link";
 
-import { AspectRatio } from "@alsos/ui/components/aspect-ratio"
-import { Badge } from "@alsos/ui/components/badge"
+import type { Project } from "@/content/projects/types";
+import { getMediaImageUrl } from "@/lib/media";
+import { AspectRatio } from "@alsos/ui/components/aspect-ratio";
+import { Badge } from "@alsos/ui/components/badge";
 import {
   Card,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@alsos/ui/components/card"
-import type { Project } from "@/content/projects/types"
+} from "@alsos/ui/components/card";
 
 interface ProjectCardProps {
-  project: Project
+  project: Project;
 }
 
 function ProjectCard({ project }: ProjectCardProps) {
-  const coverImage = project.images[0]
+  const coverImage = project.images[0];
 
   return (
     <Link href={`/projects/${project.slug}`} className="group block">
       <Card className="h-full transition-colors hover:ring-foreground/10">
         {coverImage ? (
           <AspectRatio ratio={16 / 9}>
-            <Image
-              src={coverImage.src}
+            <img
+              src={getMediaImageUrl(coverImage.id)}
               alt={coverImage.alt}
-              fill
               className="object-cover"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             />
@@ -41,7 +40,9 @@ function ProjectCard({ project }: ProjectCardProps) {
               </Badge>
             ))}
           </div>
-          <CardTitle className="group-hover:text-primary">{project.title}</CardTitle>
+          <CardTitle className="group-hover:text-primary">
+            {project.title}
+          </CardTitle>
           <CardDescription>{project.summary}</CardDescription>
         </CardHeader>
         <CardFooter>
@@ -51,7 +52,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         </CardFooter>
       </Card>
     </Link>
-  )
+  );
 }
 
-export { ProjectCard }
+export { ProjectCard };
