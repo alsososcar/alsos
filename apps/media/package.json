@@ -1,0 +1,29 @@
+{
+  "name": "@alsos/media",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "portless",
+    "dev:app": "wrangler dev",
+    "start": "wrangler dev",
+    "build": "wrangler build",
+    "test": "vitest",
+    "cf-typegen": "wrangler types"
+  },
+  "devDependencies": {
+    "@alsos/typescript-config": "workspace:*",
+    "@cloudflare/vitest-pool-workers": "0.16.17",
+    "@types/node": "25.9.3",
+    "portless": "0.14.0",
+    "typescript": "6.0.3",
+    "vitest": "4.1.9",
+    "wrangler": "4.102.0"
+  },
+  "dependencies": {
+    "@t3-oss/env-core": "0.13.11",
+    "hono": "4.12.25",
+    "try": "1.0.3",
+    "zod": "4.4.3"
+  }
+}

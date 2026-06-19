@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" fill="none">
+  <rect width="1200" height="675" fill="#0c4a6e"/>
+  <rect x="80" y="100" width="1040" height="60" fill="#0369a1" opacity="0.6"/>
+  <text x="120" y="140" fill="#bae6fd" font-family="monospace" font-size="16">GET /api/kunnskapsloftet/v1/lareplaner</text>
+  <rect x="80" y="200" width="500" height="360" fill="#075985" opacity="0.5" stroke="#38bdf8" stroke-width="1"/>
+  <rect x="620" y="200" width="500" height="360" fill="#075985" opacity="0.5" stroke="#38bdf8" stroke-width="1"/>
+  <text x="330" y="240" text-anchor="middle" fill="#7dd3fc" font-family="system-ui,sans-serif" font-size="14">UDIR API</text>
+  <text x="870" y="240" text-anchor="middle" fill="#7dd3fc" font-family="system-ui,sans-serif" font-size="14">Normalisert data</text>
+  <text x="600" y="620" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="20">UDIR  API-integrasjon</text>
+</svg>
