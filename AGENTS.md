@@ -50,3 +50,15 @@ If the application uses Durable Objects or Workflows, refer to the relevant best
 - Durable Objects: https://developers.cloudflare.com/durable-objects/best-practices/rules-of-durable-objects/
 - Workflows: https://developers.cloudflare.com/workflows/build/rules-of-workflows/
 <!-- END:cloudflare-agent-rules -->
+
+<!-- START:i18n-next.js -->
+
+# i18n
+
+- Use `const t = useExtracted()` in client React components/hooks.
+- Use `const t = await getExtracted()` in server code.
+- Default locale is norwegian bokmål, use that in `t("...")`.
+- Never pass extracted variable as prop to other components.
+- Do not manually create custom IDs in `nb.po` or `en.po` or `nn.po`.
+- Regenerate translation files through the project tooling (`pnpm dev` / `pnpm build`).
+<!-- END:i18n-next.js -->
