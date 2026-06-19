@@ -20,5 +20,6 @@
       "cache": false,
       "persistent": true
     }
-  }
+  },
+  "globalEnv": ["APP_URL_MARKETING", "DATABASE_URL", "DOMAIN_ROOT", "NODE_ENV"]
 }

@@ -31,16 +31,20 @@
       },
     },
     "apps/web": {
+    "apps/marketing": {
       "name": "@alsos/web",
       "version": "0.0.1",
       "dependencies": {
+        "@alsos/env": "workspace:*",
         "@alsos/ui": "workspace:*",
+        "@t3-oss/env-nextjs": "0.13.11",
         "babel-plugin-react-compiler": "1.0.0",
         "lucide-react": "1.20.0",
         "next": "16.2.9",
         "next-themes": "0.4.6",
         "react": "19.2.7",
         "react-dom": "19.2.7",
+        "zod": "4.4.3",
       },
       "devDependencies": {
         "@alsos/eslint-config": "workspace:*",
@@ -52,6 +56,15 @@
         "eslint": "10.4.1",
         "portless": "0.14.0",
         "typescript": "6.0.3",
+      },
+    },
+    "packages/env": {
+      "name": "@alsos/env",
+      "dependencies": {
+        "zod": "4.4.3",
+      },
+      "devDependencies": {
+        "@alsos/typescript-config": "workspace:*",
       },
     },
     "packages/eslint-config": {
@@ -111,6 +124,8 @@
   "packages": {
     "@alloc/quick-lru": ["@alloc/quick-lru@5.2.0", "", {}, "sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw=="],
 
+    "@alsos/env": ["@alsos/env@workspace:packages/env"],
+
     "@alsos/eslint-config": ["@alsos/eslint-config@workspace:packages/eslint-config"],
 
     "@alsos/media": ["@alsos/media@workspace:apps/media"],
@@ -119,7 +134,7 @@
 
     "@alsos/ui": ["@alsos/ui@workspace:packages/ui"],
 
-    "@alsos/web": ["@alsos/web@workspace:apps/web"],
+    "@alsos/web": ["@alsos/web@workspace:apps/marketing"],
 
     "@babel/code-frame": ["@babel/code-frame@7.29.7", "", { "dependencies": { "@babel/helper-validator-identifier": "^7.29.7", "js-tokens": "^4.0.0", "picocolors": "^1.1.1" } }, "sha512-Aup7aUOfpbAUg2ROOJN6Iw5f9DMBlzu0mIkm/malLQFN/YQgO48wCj0Kxa3sEHJvPVFg7siR+qRInwXd2qhQKw=="],
 
@@ -486,6 +501,10 @@
     "@speed-highlight/core": ["@speed-highlight/core@1.2.17", "", {}, "sha512-Z92FwKpCtfaW1V0jTU/fh3QzYEZN8wDwrzRIBoADCJfn4mJCNcJN/XegifX7BDrQ8/h9Xh/JnbyMchL0FqXrkg=="],
 
     "@swc/helpers": ["@swc/helpers@0.5.15", "", { "dependencies": { "tslib": "^2.8.0" } }, "sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g=="],
+
+    "@t3-oss/env-core": ["@t3-oss/env-core@0.13.11", "", { "peerDependencies": { "arktype": "^2.1.0", "typescript": ">=5.0.0", "valibot": "^1.0.0-beta.7 || ^1.0.0", "zod": "^3.24.0 || ^4.0.0" }, "optionalPeers": ["arktype", "typescript", "valibot", "zod"] }, "sha512-sM7GYY+KL7H/Hl0BE0inWfk3nRHZOLhmVn7sHGxaZt9FAR6KqREXAE+6TqKfiavfXmpRxO/OZ2QgKRd+oiBYRQ=="],
+
+    "@t3-oss/env-nextjs": ["@t3-oss/env-nextjs@0.13.11", "", { "dependencies": { "@t3-oss/env-core": "0.13.11" }, "peerDependencies": { "arktype": "^2.1.0", "typescript": ">=5.0.0", "valibot": "^1.0.0-beta.7 || ^1.0.0", "zod": "^3.24.0 || ^4.0.0" }, "optionalPeers": ["arktype", "typescript", "valibot", "zod"] }, "sha512-NC+3j7YWgpzdFu1t5y/8wqibTK0lm5RS4bjXA1n8uwik3wIR4iZM4Fa+U2BaMa5k3Qk8RZiYhoAIX0WogmGkzg=="],
 
     "@tailwindcss/node": ["@tailwindcss/node@4.3.1", "", { "dependencies": { "@jridgewell/remapping": "^2.3.5", "enhanced-resolve": "5.21.6", "jiti": "^2.7.0", "lightningcss": "1.32.0", "magic-string": "^0.30.21", "source-map-js": "^1.2.1", "tailwindcss": "4.3.1" } }, "sha512-6NDaqRoAMSXD1mr/RXu0HBvNE9a2n5tHPsxu9XHLws8o4Twes5rBM2205SUUiJ9goAtadrN6xTGX0UDEwp/N4A=="],
 

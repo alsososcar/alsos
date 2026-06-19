@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" fill="none">
+  <rect width="1200" height="675" fill="#1a1f2e"/>
+  <rect x="150" y="200" width="160" height="80" rx="4" fill="#2d3748" stroke="#a0aec0" stroke-width="1"/>
+  <text x="230" y="248" text-anchor="middle" fill="#a0aec0" font-family="monospace" font-size="12">v1</text>
+  <line x1="310" y1="240" x2="430" y2="240" stroke="#48bb78" stroke-width="2"/>
+  <rect x="430" y="200" width="160" height="80" rx="4" fill="#2d3748" stroke="#a0aec0" stroke-width="1"/>
+  <text x="510" y="248" text-anchor="middle" fill="#a0aec0" font-family="monospace" font-size="12">v2</text>
+  <line x1="590" y1="240" x2="710" y2="240" stroke="#48bb78" stroke-width="2"/>
+  <rect x="710" y="200" width="160" height="80" rx="4" fill="#2d3748" stroke="#68d391" stroke-width="2"/>
+  <text x="790" y="248" text-anchor="middle" fill="#68d391" font-family="monospace" font-size="12">v3</text>
+  <text x="600" y="580" text-anchor="middle" fill="#a0aec0" font-family="system-ui,sans-serif" font-size="20">Database  Migrasjoner</text>
+</svg>
