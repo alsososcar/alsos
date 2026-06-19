@@ -26,6 +26,7 @@
     "APP_URL_MEDIA",
     "DATABASE_URL",
     "DOMAIN_ROOT",
-    "NODE_ENV"
+    "NODE_ENV",
+    "UNSECURE_COOKIE"
   ]
 }
