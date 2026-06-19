@@ -2,7 +2,7 @@
   "extends": "@alsos/typescript-config/nextjs.json",
   "compilerOptions": {
     "paths": {
-      "@/*": ["./*"],
+      "@/*": ["*"],
       "@alsos/ui/*": ["../../packages/ui/src/*"],
     },
     "plugins": [
