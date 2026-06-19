@@ -1,48 +1,45 @@
-import type { Metadata } from "next"
-import Link from "next/link"
-import { notFound } from "next/navigation"
-import { ArrowLeftIcon, ExternalLinkIcon } from "lucide-react"
+import { ArrowLeftIcon, ExternalLinkIcon } from "lucide-react";
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
 
-import { Badge } from "@alsos/ui/components/badge"
-import { Button } from "@alsos/ui/components/button"
-import { Separator } from "@alsos/ui/components/separator"
-import { ProjectFacts } from "@/components/marketing/project-facts"
-import { ProjectGallery } from "@/components/marketing/project-gallery"
-import {
-  getAllProjectSlugs,
-  getProjectBySlug,
-} from "@/lib/projects"
+import { ProjectFacts } from "@/components/marketing/project-facts";
+import { ProjectGallery } from "@/components/marketing/project-gallery";
+import { getAllProjectSlugs, getProjectBySlug } from "@/lib/projects";
+import { Badge } from "@alsos/ui/components/badge";
+import { Button } from "@alsos/ui/components/button";
+import { Separator } from "@alsos/ui/components/separator";
 
 interface ProjectPageProps {
-  params: Promise<{ slug: string }>
+  params: Promise<{ slug: string }>;
 }
 
 export function generateStaticParams() {
-  return getAllProjectSlugs().map((slug) => ({ slug }))
+  return getAllProjectSlugs().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({
   params,
 }: ProjectPageProps): Promise<Metadata> {
-  const { slug } = await params
-  const project = getProjectBySlug(slug)
+  const { slug } = await params;
+  const project = getProjectBySlug(slug);
 
   if (!project) {
-    return { title: "Prosjekt ikke funnet" }
+    return { title: "Prosjekt ikke funnet" };
   }
 
   return {
     title: `${project.title} — Oscar Krokeide Alsos`,
     description: project.summary,
-  }
+  };
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
-  const { slug } = await params
-  const project = getProjectBySlug(slug)
+  const { slug } = await params;
+  const project = getProjectBySlug(slug);
 
   if (!project) {
-    notFound()
+    notFound();
   }
 
   return (
@@ -115,5 +112,5 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         ) : null}
       </div>
     </article>
-  )
+  );
 }
