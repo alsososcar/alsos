@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
-import Navigation from "@/components/navigation";
 import { SiteFooter } from "@/components/marketing/site-footer";
+import Navigation from "@/components/navigation";
 import { ThemeProvider } from "@/components/theme-provider";
-import "@alsos/ui/globals.css";
+import "@/globals.css";
 import { cn } from "@alsos/ui/lib/utils";
 import { NextIntlClientProvider } from "next-intl";
 import { getExtracted, getLocale } from "next-intl/server";
