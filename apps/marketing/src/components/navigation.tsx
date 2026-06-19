@@ -2,6 +2,8 @@
 
 import { useExtracted } from "next-intl";
 import Link from "next/link";
+import { LocaleSwitcher } from "./locale-toggle";
+import { ModeToggle } from "./mode-toggle";
 
 export default function Navigation() {
   const t = useExtracted();
@@ -29,6 +31,10 @@ export default function Navigation() {
           {t("Kontakt")}
         </Link>
       </nav>
+      <div className="flex items-center gap-2">
+        <ModeToggle />
+        <LocaleSwitcher />
+      </div>
     </header>
   );
 }
