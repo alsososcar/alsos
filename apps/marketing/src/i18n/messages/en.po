@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: next-intl\n"
+"X-Crowdin-SourceKey: msgstr\n"
+
+#: src/app/layout.tsx
+msgid "IYAtui"
+msgstr "Oscar Krokeide Alsos - Portfolio"
+
+#: src/app/layout.tsx
+msgid "jEWL_A"
+msgstr "Portfolio for Oscar Krokeide Alsos — Craft certificate in IT Development. Projects in web development, integrations, APIs and database systems."
+
+#: src/components/locale-toggle.tsx
+msgid "tlamvo"
+msgstr "Switch language"
+
+#: src/components/locale-toggle.tsx
+msgid "ClmQRE"
+msgstr "Next language: "
+
+#: src/components/navigation.tsx
+msgid "BjbTc8"
+msgstr "Oscar Krokeide Alsos"
+
+#: src/components/navigation.tsx
+msgid "PQcvAs"
+msgstr "Projects"
+
+#: src/components/navigation.tsx
+msgid "Yct1sD"
+msgstr "Contact"

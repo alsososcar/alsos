@@ -1,3 +1,4 @@
+import { ALLOWED_COUNTRIES } from "@alsos/utils/countries";
 import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { Result } from "try";
@@ -21,7 +22,14 @@ app.use(
         }
       }
     },
-  })
+  }),
+  async (c, next) => {
+    const country = c.req.raw.cf?.country as string;
+    if (country && !ALLOWED_COUNTRIES.has(country)) {
+      return c.text("Not available in your region");
+    }
+    await next();
+  }
 );
 
 app.get("/image/:id", getImage);
@@ -31,4 +39,4 @@ function isValidUrl(urlString: string) {
   return urlResult.ok;
 }
 
-export default app
+export default app;

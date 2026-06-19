@@ -1,0 +1,3 @@
+@import "@alsos/ui/globals.css";
+
+@source "./**/*.{ts,tsx}";

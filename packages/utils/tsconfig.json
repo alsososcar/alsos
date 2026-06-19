@@ -1,0 +1,5 @@
+{
+  "extends": "@alsos/typescript-config/base",
+  "include": ["src", "env"],
+  "exclude": ["node_modules"],
+}
