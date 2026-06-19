@@ -21,5 +21,11 @@
       "persistent": true
     }
   },
-  "globalEnv": ["APP_URL_MARKETING", "DATABASE_URL", "DOMAIN_ROOT", "NODE_ENV"]
+  "globalEnv": [
+    "APP_URL_MARKETING",
+    "APP_URL_MEDIA",
+    "DATABASE_URL",
+    "DOMAIN_ROOT",
+    "NODE_ENV"
+  ]
 }
