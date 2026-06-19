@@ -15,8 +15,12 @@ msgid "jEWL_A"
 msgstr "Portfolio for Oscar Krokeide Alsos — Craft certificate in IT Development. Projects in web development, integrations, APIs and database systems."
 
 #: src/components/locale-toggle.tsx
-msgid "dISpGP"
+msgid "tlamvo"
 msgstr "Switch language"
+
+#: src/components/locale-toggle.tsx
+msgid "ClmQRE"
+msgstr "Next language: "
 
 #: src/components/navigation.tsx
 msgid "BjbTc8"

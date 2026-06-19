@@ -17,23 +17,25 @@ export default function Navigation() {
         {t("Oscar Krokeide Alsos")}
       </Link>
 
-      <nav className="flex items-center gap-6">
-        <Link
-          href="/#prosjekter"
-          className="text-xs font-semibold tracking-widest text-muted-foreground uppercase transition-colors hover:text-foreground"
-        >
-          {t("Prosjekter")}
-        </Link>
-        <Link
-          href="/#kontakt"
-          className="text-xs font-semibold tracking-widest text-muted-foreground uppercase transition-colors hover:text-foreground"
-        >
-          {t("Kontakt")}
-        </Link>
-      </nav>
-      <div className="flex items-center gap-2">
-        <ModeToggle />
-        <LocaleSwitcher />
+      <div className="flex items-center gap-6">
+        <nav className="flex items-center gap-6">
+          <Link
+            href="/#prosjekter"
+            className="text-xs font-semibold tracking-widest text-muted-foreground uppercase transition-colors hover:text-foreground"
+          >
+            {t("Prosjekter")}
+          </Link>
+          <Link
+            href="/#kontakt"
+            className="text-xs font-semibold tracking-widest text-muted-foreground uppercase transition-colors hover:text-foreground"
+          >
+            {t("Kontakt")}
+          </Link>
+        </nav>
+        <div className="flex items-center gap-2">
+          <ModeToggle />
+          <LocaleSwitcher />
+        </div>
       </div>
     </header>
   );

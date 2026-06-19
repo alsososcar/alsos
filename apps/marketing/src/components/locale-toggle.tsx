@@ -27,8 +27,8 @@ export function LocaleSwitcher() {
       size="icon-sm"
       disabled={isPending}
       onClick={onToggle}
-      aria-label={t("Switch language")}
-      title={nextLocale.toUpperCase()}
+      aria-label={t("Bytt språk")}
+      title={`${t("Neste språk: ")}${nextLocale.toUpperCase()}`}
     >
       <span className="text-xs font-semibold uppercase">
         {locale.toUpperCase()}

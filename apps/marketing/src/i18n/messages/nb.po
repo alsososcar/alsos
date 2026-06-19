@@ -15,8 +15,12 @@ msgid "jEWL_A"
 msgstr "Portfolio for Oscar Krokeide Alsos — Fagbrev i IT-Utvikling. Prosjekter innen webutvikling, integrasjoner, API-er og databasesystemer."
 
 #: src/components/locale-toggle.tsx
-msgid "dISpGP"
-msgstr "Switch language"
+msgid "tlamvo"
+msgstr "Bytt språk"
+
+#: src/components/locale-toggle.tsx
+msgid "ClmQRE"
+msgstr "Neste språk: "
 
 #: src/components/navigation.tsx
 msgid "BjbTc8"
