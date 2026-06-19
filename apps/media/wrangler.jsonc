@@ -3,10 +3,18 @@
   "name": "alsos-media",
   "main": "src/index.ts",
   "compatibility_date": "2026-06-19",
-  "observability": {
-    "enabled": true,
-  },
   "compatibility_flags": ["nodejs_compat"],
+
+  "preview_urls": false,
+  "vars": {
+    "DOMAIN_ROOT": "alsos.dev",
+  },
+  "observability": {
+    "enabled": false,
+    "logs": {
+      "enabled": false,
+    },
+  },
 
   "workers_dev": false,
   "placement": {
