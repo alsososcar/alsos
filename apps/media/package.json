@@ -11,12 +11,18 @@
     "test": "vitest",
     "cf-typegen": "wrangler types"
   },
+  "portless": {
+    "name": "media.alsos",
+    "script": "dev:app",
+    "proxy": true,
+    "appPort": 8787
+  },
   "devDependencies": {
     "@alsos/typescript-config": "workspace:*",
     "@cloudflare/vitest-pool-workers": "0.16.17",
     "@types/node": "25.9.3",
     "portless": "0.14.0",
-    "typescript": "6.0.3",
+    "typescript": "7.0.2",
     "vitest": "4.1.9",
     "wrangler": "4.102.0"
   },

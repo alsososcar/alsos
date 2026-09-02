@@ -29,8 +29,8 @@
     },
   ],
   "env": {
-    "development": {
-      "name": "alsos-media-development",
+    "dev": {
+      "name": "alsos-media-dev",
       "r2_buckets": [
         {
           "binding": "ALSOS_ASSETS",

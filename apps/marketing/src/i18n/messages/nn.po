@@ -5,31 +5,3 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: next-intl\n"
 "X-Crowdin-SourceKey: msgstr\n"
-
-#: src/app/layout.tsx
-msgid "IYAtui"
-msgstr "Oscar Krokeide Alsos - Portfolio"
-
-#: src/app/layout.tsx
-msgid "jEWL_A"
-msgstr "Portfolio for Oscar Krokeide Alsos — Fagbrev i IT-utvikling. Prosjekt innan webutvikling, integrasjonar, API-er og databasesystem."
-
-#: src/components/locale-toggle.tsx
-msgid "tlamvo"
-msgstr "Byt språk"
-
-#: src/components/locale-toggle.tsx
-msgid "ClmQRE"
-msgstr "Neste språk: "
-
-#: src/components/navigation.tsx
-msgid "BjbTc8"
-msgstr "Oscar Krokeide Alsos"
-
-#: src/components/navigation.tsx
-msgid "PQcvAs"
-msgstr "Prosjekt"
-
-#: src/components/navigation.tsx
-msgid "Yct1sD"
-msgstr "Kontakt"
