@@ -1,13 +1,13 @@
-import Header from "#/components/Header";
-
-import { createFileRoute } from "@tanstack/react-router";
 import {
   Card,
   CardHeader,
   CardDescription,
   CardTitle,
 } from "@alsos/ui/components/card";
+import { createFileRoute } from "@tanstack/react-router";
 import { DatabaseIcon, GlobeIcon, PlugIcon, ServerIcon } from "lucide-react";
+
+import Header from "#/components/Header";
 import SelectedProjects from "#/components/SelectedProjects";
 
 // Temporary project data until projects are loaded from the real data source.
@@ -92,11 +92,11 @@ function App() {
 
       {/* Capabilities */}
       <section className=''>
-        <p className='font-mono text-xs tracking-widest text-muted-foreground uppercase'>
+        <p className='text-muted-foreground font-mono text-xs tracking-widest uppercase'>
           Kompetanse
         </p>
 
-        <h2 className='mt-2 font-heading text-2xl font-semibold tracking-wider uppercase'>
+        <h2 className='font-heading mt-2 text-2xl font-semibold tracking-wider uppercase'>
           Hva jeg jobber med
         </h2>
 
@@ -104,7 +104,7 @@ function App() {
           {capabilities.map((capability) => (
             <Card key={capability.title} size='sm'>
               <CardHeader>
-                <capability.icon className='mb-2 size-5 text-primary' />
+                <capability.icon className='text-primary mb-2 size-5' />
                 <CardTitle>{capability.title}</CardTitle>
                 <CardDescription>{capability.description}</CardDescription>
               </CardHeader>

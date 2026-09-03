@@ -5,12 +5,6 @@
   "imports": {
     "#/*": "./src/*"
   },
-  "portless": {
-    "name": "web.alsos",
-    "script": "dev:app",
-    "proxy": true,
-    "appPort": 45100
-  },
   "scripts": {
     "dev": "portless",
     "dev:app": "vite dev --port 45100",
@@ -26,18 +20,11 @@
     "@tanstack/react-router": "latest",
     "@tanstack/react-router-devtools": "latest",
     "@tanstack/react-start": "latest",
-    "@tanstack/store": "latest",
-    "class-variance-authority": "0.7.1",
-    "clsx": "2.1.1",
     "lucide-react": "1.20.0",
-    "marked": "15.0.8",
     "react": "19.2.7",
     "react-dom": "19.2.7",
-    "streamdown": "2.3.0",
-    "tailwind-merge": "3.6.0",
     "tailwindcss": "4.3.1",
-    "tailwindcss-animate": "1.0.7",
-    "zod": "4.4.3"
+    "tailwindcss-animate": "1.0.7"
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "1.26.0",
@@ -62,5 +49,11 @@
       "sharp",
       "workerd"
     ]
+  },
+  "portless": {
+    "name": "web.alsos",
+    "script": "dev:app",
+    "proxy": true,
+    "appPort": 45100
   }
 }

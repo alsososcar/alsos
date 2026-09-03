@@ -1,12 +1,12 @@
+import { TanStackDevtools } from "@tanstack/react-devtools";
 import { HeadContent, Scripts, createRootRoute } from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
-import { TanStackDevtools } from "@tanstack/react-devtools";
-import Footer from "../components/Footer";
 
-import appCss from "../styles.css?url";
-
-import { ThemeProvider } from "#/components/theme/ThemeProvider";
 import Navigation from "#/components/Navigation";
+import { ThemeProvider } from "#/components/theme/ThemeProvider";
+
+import Footer from "../components/Footer";
+import appCss from "../styles.css?url";
 
 export const Route = createRootRoute({
   head: () => ({
@@ -38,7 +38,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       <head>
         <HeadContent />
       </head>
-      <body className='flex min-h-screen flex-col font-sans antialiased wrap-anywhere selection:bg-[rgba(79,184,178,0.24)]'>
+      <body className='flex min-h-screen flex-col font-sans wrap-anywhere antialiased selection:bg-[rgba(79,184,178,0.24)]'>
         <ThemeProvider>
           <Navigation />
           <div className='mx-auto flex w-full max-w-250 flex-1 justify-center'>

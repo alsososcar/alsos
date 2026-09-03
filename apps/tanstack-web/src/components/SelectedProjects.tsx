@@ -38,8 +38,8 @@ export default function SelectedProjects({
           params={{ slug: project.slug }}
           className='group block'
         >
-          <Card className='h-full overflow-hidden pt-0 transition-colors hover:border-primary'>
-            <div className='aspect-square overflow-hidden bg-muted'>
+          <Card className='hover:border-primary h-full overflow-hidden pt-0 transition-colors'>
+            <div className='bg-muted aspect-square overflow-hidden'>
               <img
                 src={
                   project.images[0] &&
@@ -56,7 +56,7 @@ export default function SelectedProjects({
               <CardTitle>{project.title}</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className='text-sm text-muted-foreground'>{project.summary}</p>
+              <p className='text-muted-foreground text-sm'>{project.summary}</p>
             </CardContent>
           </Card>
         </Link>

@@ -5,3 +5,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: next-intl\n"
 "X-Crowdin-SourceKey: msgstr\n"
+
+#: src/app/layout.tsx
+msgid "IYAtui"
+msgstr ""
+
+#: src/app/layout.tsx
+msgid "jEWL_A"
+msgstr ""
+
+#: src/components/locale-toggle.tsx
+msgid "tlamvo"
+msgstr ""
+
+#: src/components/locale-toggle.tsx
+msgid "ClmQRE"
+msgstr ""
+
+#: src/components/navigation.tsx
+msgid "BjbTc8"
+msgstr ""
+
+#: src/components/navigation.tsx
+msgid "PQcvAs"
+msgstr ""
+
+#: src/components/navigation.tsx
+msgid "Yct1sD"
+msgstr ""
