@@ -30,7 +30,7 @@ export default function SelectedProjects({
   projects: SingleProject[];
 }) {
   return (
-    <div className='mx-auto grid w-full max-w-4xl grid-cols-1 gap-6 sm:grid-cols-2'>
+    <div className='mx-auto grid w-1/2 grid-cols-1 gap-6 md:mx-0 md:w-full md:grid-cols-3'>
       {projects.map((project) => (
         <Link
           key={project.slug}

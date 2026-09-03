@@ -1,3 +1,4 @@
+import { Button } from "@alsos/ui/components/button";
 import {
   Card,
   CardHeader,
@@ -5,23 +6,15 @@ import {
   CardTitle,
 } from "@alsos/ui/components/card";
 import { createFileRoute } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
 import { DatabaseIcon, GlobeIcon, PlugIcon, ServerIcon } from "lucide-react";
 
+import ContactCta from "#/components/ContactCta";
 import Header from "#/components/Header";
 import SelectedProjects from "#/components/SelectedProjects";
 
 // Temporary project data until projects are loaded from the real data source.
-const placeholderProjects = [
-  {
-    slug: "portfolio-website",
-    title: "Portfolio-nettside",
-    summary: "En personlig portefølje for å vise frem utvalgte prosjekter.",
-    description: "Midlertidig prosjektbeskrivelse.",
-    tags: ["React", "TypeScript"],
-    year: 2026,
-    role: "Utvikler",
-    images: [{ id: 1, alt: "Portfolio-nettside" }],
-  },
+export const placeholderProjects = [
   {
     slug: "safe-exam-browser",
     title: "Safe Exam Browser",
@@ -114,9 +107,31 @@ function App() {
       </section>
 
       {/* Selected favorite projects */}
-      <section className='mt-16'>
-        <SelectedProjects projects={placeholderProjects} />
+      <section id='prosjekter' className='mt-16 scroll-mt-20'>
+        <p className='text-muted-foreground font-mono text-xs tracking-widest uppercase'>
+          Portefølje
+        </p>
+
+        <h2 className='font-heading mt-2 text-2xl font-semibold tracking-wider uppercase'>
+          Utvalgte prosjekter
+        </h2>
+
+        <p className='text-muted-foreground mt-4 max-w-2xl text-sm leading-relaxed'>
+          Prosjekter fra læretiden og eget arbeid — klikk for bilder, tekniske
+          detaljer og mer informasjon.
+        </p>
+
+        <div className='mt-10'>
+          <SelectedProjects projects={placeholderProjects} />
+        </div>
+
+        <Button className='mt-8' render={<Link to='/projects' />}>
+          Vis alle prosjekter
+        </Button>
       </section>
+
+      {/* Contact */}
+      <ContactCta />
     </div>
   );
 }

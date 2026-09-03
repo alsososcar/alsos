@@ -22,7 +22,7 @@ function getThemeScript(storageKey: string, defaultTheme: Theme) {
 }
 
 const ThemeProviderContext = createContext<ThemeProviderState>({
-  theme: "system",
+  theme: "light",
   setTheme: () => {},
 });
 
@@ -43,7 +43,7 @@ function applyTheme(theme: Theme) {
 
 export function ThemeProvider({
   children,
-  defaultTheme = "system",
+  defaultTheme = "light",
   storageKey = "theme",
 }: ThemeProviderProps) {
   const [theme, setThemeState] = useState<Theme>(defaultTheme);
