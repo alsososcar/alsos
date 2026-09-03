@@ -4,4 +4,12 @@
   "compatibility_date": "2026-09-03",
   "compatibility_flags": ["nodejs_compat"],
   "main": "@tanstack/react-start/server-entry",
+  "routes": [
+    { "pattern": "alsos.dev", "custom_domain": true },
+    { "pattern": "krokeide.no", "custom_domain": true },
+    { "pattern": "marketing.krokeide.no", "custom_domain": true },
+    { "pattern": "www.alsos.dev", "custom_domain": true },
+    { "pattern": "www.krokeide.no", "custom_domain": true },
+    { "pattern": "marketing.alsos.dev", "custom_domain": true }
+  ]
 }

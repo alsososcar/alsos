@@ -14,6 +14,11 @@ export const databaseSchema = z.object({
   DATABASE_URL: z.url(),
 });
 
+export const authSchema = z.object({
+  BETTER_AUTH_SECRET: z.string().min(32),
+  BETTER_AUTH_URL: z.url(),
+});
+
 export const domainRootSchema = z.object({
   DOMAIN_ROOT: z.string().min(1),
 });
