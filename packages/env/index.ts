@@ -1,1 +1,5 @@
-export { sharedServerSchema, type SharedServerEnv } from "./shared";
+export {
+  sharedServerSchema,
+  type SharedServerEnv,
+  appsClientViteSchema,
+} from "./shared";

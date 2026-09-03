@@ -5,6 +5,11 @@ export const appsSchema = z.object({
   APP_URL_MEDIA: z.url(),
 });
 
+export const appsClientViteSchema = z.object({
+  VITE_APP_URL_MARKETING: z.url(),
+  VITE_APP_URL_MEDIA: z.url(),
+});
+
 export const databaseSchema = z.object({
   DATABASE_URL: z.url(),
 });

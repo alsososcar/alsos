@@ -66,7 +66,9 @@
     "apps/tanstack-web": {
       "name": "@alsos/web",
       "dependencies": {
+        "@alsos/env": "workspace:*",
         "@alsos/ui": "workspace:*",
+        "@t3-oss/env-core": "0.13.11",
         "@tailwindcss/vite": "4.1.18",
         "@tanstack/react-devtools": "latest",
         "@tanstack/react-router": "latest",
@@ -77,6 +79,7 @@
         "react-dom": "19.2.7",
         "tailwindcss": "4.3.1",
         "tailwindcss-animate": "1.0.7",
+        "zod": "4.4.3",
       },
       "devDependencies": {
         "@cloudflare/vite-plugin": "1.26.0",
