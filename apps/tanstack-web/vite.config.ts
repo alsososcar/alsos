@@ -1,18 +1,18 @@
-import { defineConfig } from 'vite'
-import { devtools } from '@tanstack/devtools-vite'
+import { defineConfig } from "vite";
+import { devtools } from "@tanstack/devtools-vite";
 
-import { tanstackStart } from '@tanstack/react-start/plugin/vite'
+import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 
-import viteReact from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
-import { cloudflare } from '@cloudflare/vite-plugin'
-import contentCollections from '@content-collections/vite'
+import viteReact from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+import { cloudflare } from "@cloudflare/vite-plugin";
+import contentCollections from "@content-collections/vite";
 
 const config = defineConfig({
   resolve: { tsconfigPaths: true },
   plugins: [
     devtools(),
-    cloudflare({ viteEnvironment: { name: 'ssr' } }),
+    cloudflare({ viteEnvironment: { name: "ssr" } }),
     contentCollections(),
     tailwindcss(),
     tanstackStart(),
@@ -20,8 +20,8 @@ const config = defineConfig({
   ],
   server: {
     port: 45100,
-    host: true
-  }
-})
+    host: true,
+  },
+});
 
-export default config
+export default config;

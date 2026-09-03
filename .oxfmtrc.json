@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "semi": true,
+  "singleQuote": false,
+  "trailingComma": "all",
+  "sortTailwindcss": true,
+  "printWidth": 80,
+  "jsxSingleQuote": true,
+  "tabWidth": 2,
+  "ignorePatterns": [
+    "**/dist/**",
+    "**/node_modules/**",
+    "**/.next/**",
+    "**/.turbo/**",
+    "**/coverage/**",
+    "**/routeTree.gen.ts",
+    "**/.content-collections/**"
+  ]
+}

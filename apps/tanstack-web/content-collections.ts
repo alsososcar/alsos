@@ -1,10 +1,10 @@
-import { defineCollection, defineConfig } from '@content-collections/core'
-import { z } from 'zod'
+import { defineCollection, defineConfig } from "@content-collections/core";
+import { z } from "zod";
 
 const jobs = defineCollection({
-  name: 'jobs',
-  directory: 'content/jobs',
-  include: '**/*.md',
+  name: "jobs",
+  directory: "content/jobs",
+  include: "**/*.md",
   schema: z.object({
     jobTitle: z.string(),
     summary: z.string(),
@@ -15,12 +15,12 @@ const jobs = defineCollection({
     tags: z.array(z.string()),
     content: z.string(),
   }),
-})
+});
 
 const education = defineCollection({
-  name: 'education',
-  directory: 'content/education',
-  include: '**/*.md',
+  name: "education",
+  directory: "content/education",
+  include: "**/*.md",
   schema: z.object({
     school: z.string(),
     summary: z.string(),
@@ -29,8 +29,8 @@ const education = defineCollection({
     tags: z.array(z.string()),
     content: z.string(),
   }),
-})
+});
 
 export default defineConfig({
   collections: [jobs, education],
-})
+});

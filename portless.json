@@ -1,7 +1,0 @@
-{
-  "apps": {
-    "apps/web": { "name": "web.alsos", "script": "dev:app", "proxy": true, "appPort": 45100 },
-    "apps/marketing": { "name": "marketing.alsos", "script": "dev:app", "proxy": true },
-    "apps/media": { "name": "media.alsos", "script": "dev:app", "proxy": true, "appPort": 8787 }
-  }
-}
