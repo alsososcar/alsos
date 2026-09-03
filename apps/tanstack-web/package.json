@@ -1,0 +1,59 @@
+{
+  "name": "@alsos/web",
+  "private": true,
+  "type": "module",
+  "imports": {
+    "#/*": "./src/*"
+  },
+  "scripts": {
+    "dev": "portless",
+    "dev:app": "vite dev --port 45100",
+    "generate-routes": "tsr generate",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "bun run build && wrangler deploy"
+  },
+  "dependencies": {
+    "@alsos/ui": "workspace:*",
+    "@tailwindcss/vite": "4.1.18",
+    "@tanstack/react-devtools": "latest",
+    "@tanstack/react-router": "latest",
+    "@tanstack/react-router-devtools": "latest",
+    "@tanstack/react-start": "latest",
+    "lucide-react": "1.20.0",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "tailwindcss": "4.3.1",
+    "tailwindcss-animate": "1.0.7"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "1.26.0",
+    "@content-collections/core": "0.13.1",
+    "@content-collections/vite": "0.3.0",
+    "@tailwindcss/typography": "0.5.16",
+    "@tanstack/devtools-vite": "latest",
+    "@tanstack/router-cli": "1.132.0",
+    "@types/node": "25.9.3",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.1",
+    "portless": "0.14.0",
+    "typescript": "7.0.2",
+    "vite": "8.0.0",
+    "wrangler": "4.102.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "lightningcss",
+      "sharp",
+      "workerd"
+    ]
+  },
+  "portless": {
+    "name": "web.alsos",
+    "script": "dev:app",
+    "proxy": true,
+    "appPort": 45100
+  }
+}

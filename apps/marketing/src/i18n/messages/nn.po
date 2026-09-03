@@ -8,28 +8,28 @@ msgstr ""
 
 #: src/app/layout.tsx
 msgid "IYAtui"
-msgstr "Oscar Krokeide Alsos - Portfolio"
+msgstr ""
 
 #: src/app/layout.tsx
 msgid "jEWL_A"
-msgstr "Portfolio for Oscar Krokeide Alsos — Fagbrev i IT-utvikling. Prosjekt innan webutvikling, integrasjonar, API-er og databasesystem."
+msgstr ""
 
 #: src/components/locale-toggle.tsx
 msgid "tlamvo"
-msgstr "Byt språk"
+msgstr ""
 
 #: src/components/locale-toggle.tsx
 msgid "ClmQRE"
-msgstr "Neste språk: "
+msgstr ""
 
 #: src/components/navigation.tsx
 msgid "BjbTc8"
-msgstr "Oscar Krokeide Alsos"
+msgstr ""
 
 #: src/components/navigation.tsx
 msgid "PQcvAs"
-msgstr "Prosjekt"
+msgstr ""
 
 #: src/components/navigation.tsx
 msgid "Yct1sD"
-msgstr "Kontakt"
+msgstr ""
