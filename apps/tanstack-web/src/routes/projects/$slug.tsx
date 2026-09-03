@@ -10,9 +10,10 @@ import { Separator } from "@alsos/ui/components/separator";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowLeftIcon } from "lucide-react";
 
+import { env } from "#/lib/env";
 import { placeholderProjects } from "#/routes/index";
 
-const mediaUrl = "https://media.alsos.dev";
+const mediaAppUrl = env.APP_URL_MARKETING;
 
 export const Route = createFileRoute("/projects/$slug")({
   head: ({ params }) => {
@@ -83,7 +84,7 @@ function ProjectPage() {
             <figure key={image.id}>
               <div className='border-border bg-muted aspect-video overflow-hidden border'>
                 <img
-                  src={`${mediaUrl}/image/${image.id}`}
+                  src={`${mediaAppUrl}/image/${image.id}`}
                   alt={image.alt}
                   className='size-full object-cover'
                   onError={(event) => {
