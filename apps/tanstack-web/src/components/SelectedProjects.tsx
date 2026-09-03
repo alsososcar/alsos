@@ -6,7 +6,7 @@ import {
 } from "@alsos/ui/components/card";
 import { Link } from "@tanstack/react-router";
 
-import { env } from "#/lib/env";
+import { env } from "#/lib/env/client";
 
 type ProjectImage = {
   id: number;

@@ -1,7 +1,10 @@
+import { appsClientViteSchema } from "@alsos/env";
 import { createEnv } from "@t3-oss/env-core";
 
 export const env = createEnv({
-  client: {},
+  client: {
+    ...appsClientViteSchema.shape,
+  },
   clientPrefix: "VITE_",
-  runtimeEnv: {},
+  runtimeEnv: import.meta.env,
 });
