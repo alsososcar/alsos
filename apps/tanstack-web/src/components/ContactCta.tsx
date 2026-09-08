@@ -16,7 +16,10 @@ export default function ContactCta() {
           meg en e-post.
         </p>
         <div className='mt-8'>
-          <Button render={<a href='mailto:oscar@alsos.dev' />}>
+          <Button
+            nativeButton={false}
+            render={<a href='mailto:oscar@alsos.dev' />}
+          >
             <MailIcon data-icon='inline-start' />
             oscar@alsos.dev
           </Button>

@@ -5,13 +5,13 @@ import {
   CardDescription,
   CardTitle,
 } from "@alsos/ui/components/card";
-import { createFileRoute } from "@tanstack/react-router";
-import { Link } from "@tanstack/react-router";
+import { createFileRoute, Link, redirect } from "@tanstack/react-router";
 import { DatabaseIcon, GlobeIcon, PlugIcon, ServerIcon } from "lucide-react";
 
 import ContactCta from "#/components/ContactCta";
 import Header from "#/components/Header";
 import SelectedProjects from "#/components/SelectedProjects";
+import { getSession } from "#/lib/auth.functions";
 
 // Temporary project data until projects are loaded from the real data source.
 export const placeholderProjects = [
@@ -48,6 +48,9 @@ export const placeholderProjects = [
 ];
 
 export const Route = createFileRoute("/")({
+  beforeLoad: async () => {
+    if (!(await getSession())) throw redirect({ to: "/login" });
+  },
   component: App,
 });
 
@@ -125,7 +128,11 @@ function App() {
           <SelectedProjects projects={placeholderProjects} />
         </div>
 
-        <Button className='mt-8' render={<Link to='/projects' />}>
+        <Button
+          className='mt-8'
+          nativeButton={false}
+          render={<Link to='/projects' />}
+        >
           Vis alle prosjekter
         </Button>
       </section>

@@ -39,14 +39,14 @@ export const Route = createRootRoute({
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="nb" suppressHydrationWarning>
+    <html lang='nb' suppressHydrationWarning>
       <head>
         <HeadContent />
       </head>
-      <body className="flex min-h-screen flex-col font-sans wrap-anywhere antialiased selection:bg-[rgba(79,184,178,0.24)]">
+      <body className='flex min-h-screen flex-col font-sans wrap-anywhere antialiased selection:bg-[rgba(79,184,178,0.24)]'>
         <ThemeProvider>
           <Navigation />
-          <div className="mx-auto flex w-full max-w-250 flex-1 justify-center">
+          <div className='mx-auto flex w-full max-w-250 flex-1 justify-center'>
             {children}
           </div>
           <Footer />
