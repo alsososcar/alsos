@@ -5,13 +5,12 @@ import {
   CardDescription,
   CardTitle,
 } from "@alsos/ui/components/card";
-import { createFileRoute, Link, redirect } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { DatabaseIcon, GlobeIcon, PlugIcon, ServerIcon } from "lucide-react";
 
 import ContactCta from "#/components/ContactCta";
 import Header from "#/components/Header";
 import SelectedProjects from "#/components/SelectedProjects";
-import { getSession } from "#/lib/auth.functions";
 
 // Temporary project data until projects are loaded from the real data source.
 export const placeholderProjects = [
@@ -48,9 +47,6 @@ export const placeholderProjects = [
 ];
 
 export const Route = createFileRoute("/")({
-  beforeLoad: async () => {
-    if (!(await getSession())) throw redirect({ to: "/login" });
-  },
   component: App,
 });
 

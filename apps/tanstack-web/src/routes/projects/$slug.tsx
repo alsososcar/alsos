@@ -7,19 +7,15 @@ import {
   CardTitle,
 } from "@alsos/ui/components/card";
 import { Separator } from "@alsos/ui/components/separator";
-import { createFileRoute, Link, redirect } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowLeftIcon } from "lucide-react";
 
-import { getSession } from "#/lib/auth.functions";
 import { env } from "#/lib/env/client";
 import { placeholderProjects } from "#/routes/index";
 
 const mediaAppUrl = env.VITE_APP_URL_MEDIA;
 
 export const Route = createFileRoute("/projects/$slug")({
-  beforeLoad: async () => {
-    if (!(await getSession())) throw redirect({ to: "/login" });
-  },
   head: ({ params }) => {
     const project = placeholderProjects.find(
       (candidate) => candidate.slug === params.slug,

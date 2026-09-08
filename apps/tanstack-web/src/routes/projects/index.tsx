@@ -1,14 +1,10 @@
 import { Button } from "@alsos/ui/components/button";
-import { createFileRoute, Link, redirect } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 
 import SelectedProjects from "#/components/SelectedProjects";
-import { getSession } from "#/lib/auth.functions";
 import { placeholderProjects } from "#/routes/index";
 
 export const Route = createFileRoute("/projects/")({
-  beforeLoad: async () => {
-    if (!(await getSession())) throw redirect({ to: "/login" });
-  },
   component: ProjectsPage,
 });
 
