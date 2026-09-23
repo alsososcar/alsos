@@ -5,8 +5,7 @@ import {
   CardDescription,
   CardTitle,
 } from "@alsos/ui/components/card";
-import { createFileRoute } from "@tanstack/react-router";
-import { Link } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { DatabaseIcon, GlobeIcon, PlugIcon, ServerIcon } from "lucide-react";
 
 import ContactCta from "#/components/ContactCta";
@@ -125,7 +124,11 @@ function App() {
           <SelectedProjects projects={placeholderProjects} />
         </div>
 
-        <Button className='mt-8' render={<Link to='/projects' />}>
+        <Button
+          className='mt-8'
+          nativeButton={false}
+          render={<Link to='/projects' />}
+        >
           Vis alle prosjekter
         </Button>
       </section>

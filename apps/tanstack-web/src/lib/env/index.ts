@@ -1,4 +1,4 @@
-import { sharedServerSchema } from "@alsos/env";
+import { sharedServerSchema, authSchema } from "@alsos/env";
 import { createEnv } from "@t3-oss/env-core";
 
 export const env = createEnv({
@@ -6,6 +6,7 @@ export const env = createEnv({
     ...sharedServerSchema.pick({
       DATABASE_URL: true,
     }).shape,
+    ...authSchema.shape,
   },
   runtimeEnv: process.env,
 });

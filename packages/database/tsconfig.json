@@ -1,0 +1,20 @@
+{
+  "extends": "@alsos/typescript-config/base.json",
+  "compilerOptions": {
+    "types": ["node"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "lib": ["ES2024", "DOM", "DOM.Iterable"]
+  },
+  "include": ["src", "node", "env"],
+  "exclude": [
+    "node_modules",
+    "src/**/*.test.ts",
+    "src/**/*.integration.test.ts",
+    "vitest.config.ts",
+    "vitest.integration.config.ts",
+    "test"
+  ]
+}
